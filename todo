@@ -1,0 +1,5 @@
+* Delay finding the image url untile file opening -> doing it during the get_attr phase takes to
+  much time as a program waits to have read all attributs before showing the output to the user
+* Find a way to get the image size before during the getattr phase.
+	* Maybe get the image url and cache it on disque for reuse later
+	* Then use http HEAD to get the file size
